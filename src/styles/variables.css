@@ -1,0 +1,73 @@
+:root {
+    /* Colors - Light Mode (Default) */
+    --bg-primary: #ffffff;
+    --bg-secondary: #f8f9fa;
+    --text-primary: #1a1a1a;
+    --text-secondary: #6c757d;
+    --accent-color: #6366f1;
+    /* Indigo */
+    --accent-hover: #4f46e5;
+    --border-color: #e9ecef;
+
+    /* Glassmorphism Variables */
+    --glass-bg: rgba(255, 255, 255, 0.85);
+    /* Slightly more opaque for better legibility */
+    --glass-border: rgba(0, 0, 0, 0.2);
+    /* Sharper, minimalistic grey border */
+    --shape-bg: rgba(99, 102, 241, 0.15);
+    --shape-border: rgba(99, 102, 241, 0.3);
+
+    /* Typography */
+    --font-main: 'Inter', system-ui, sans-serif;
+    --font-heading: 'Outfit', sans-serif;
+
+    /* Transitions */
+    --transition-speed: 0.3s;
+}
+
+[data-theme='dark'] {
+    --bg-primary: #0f172a;
+    /* Slate 900 */
+    --bg-secondary: #1e293b;
+    /* Slate 800 */
+    --text-primary: #f8fafc;
+    --text-secondary: #cbd5e1;
+    --accent-color: #818cf8;
+    --accent-hover: #6366f1;
+    --border-color: #334155;
+
+    /* Glassmorphism Variables used in Dark Mode */
+    --glass-bg: rgba(255, 255, 255, 0.03);
+    --glass-border: rgba(255, 255, 255, 0.2);
+    /* Crisper white border */
+    --shape-bg: rgba(255, 255, 255, 0.05);
+    --shape-border: rgba(255, 255, 255, 0.1);
+}
+
+body {
+    /* background-color handled by FloatingIconsBackground */
+    color: var(--text-primary);
+    font-family: var(--font-main);
+    transition: color var(--transition-speed);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    margin: 0;
+}
+
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: var(--accent-hover);
+}
