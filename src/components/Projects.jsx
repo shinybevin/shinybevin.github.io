@@ -4,7 +4,7 @@ import { resumeData } from '../data/resume';
 
 const Projects = () => {
     return (
-        <section id="projects" style={{ padding: '4rem 2rem' }}>
+        <section id="projects" className="section-padding">
             <motion.h2
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
@@ -23,11 +23,12 @@ const Projects = () => {
                         style={{
                             background: 'var(--glass-bg)',
                             backdropFilter: 'blur(5px)',
-                            padding: '2rem',
+                            // padding handled by className
                             borderRadius: '12px',
                             border: '1px solid var(--glass-border)',
                             transition: 'transform 0.3s ease',
                         }}
+                        className="responsive-card"
                         whileHover={{ y: -5 }}
                     >
                         <h3 style={{ fontSize: '1.25rem', marginBottom: '1rem', color: 'var(--accent-color)' }}>

@@ -11,27 +11,22 @@ export const resumeData = {
             company: "Ford",
             role: "Software Engineer",
             duration: "July 2024 - Present",
-            description: "Building a company-wide Initializer App using Java and Spring Boot. developing features in the API Platform Management System with Kotlin. Migrating applications from PCF to OpenShift (GCP) including setting up PaC Tekton Pipelines and provisioning infrastructure using Terraform. Building reusable components in Angular. CONTRIBUTED in GCP 3.0 migration."
+            location: "Chennai",
+            description: "I build cloud-native enterprise systems using Java, Spring Boot, and Kotlin. At Ford, I created a company-wide Initializer App for end-to-end API onboarding, contributed to the GCP 3.0 migration, and built a cldctl solution file that completes full app registration with a single command across the organization. I also developed a reusable Spring Boot common library, supported PCF to OpenShift (GCP) migrations using Tekton and Terraform, and automated Model Armor policy integration for Apigee proxies, enabling secure API deployments at scale while gaining strong domain knowledge in the automobile industry."
         },
         {
             company: "Infosys",
             role: "Associate Consultant",
             duration: "Jan 2023 - Jul 2024",
             location: "Chennai",
-            description: "Experienced in Developing Full Stack PBM app using Spring Boot and Angular following Microservices and Micro Frontend architecture. Developed API to connect and sync data between Java and QuickBase. MEAN stack microproject. Apollo GraphQL."
+            description: "I have experience building full-stack PBM applications using Spring Boot and Angular, following microservices, micro-frontend architecture, and Agile practices. I developed APIs to sync data between Java and QuickBase, built a microproject using the MERN stack, and worked with Apollo GraphQL. My background in the healthcare domain strengthens my ability to deliver reliable, domain-driven solutions."
         },
         {
             company: "Cognizant",
             role: "Programmer Analyst",
             duration: "Aug 2020 - Dec 2022",
             location: "Chennai",
-            description: "Developing and Upgrading Existing Projects. Production Support, Daily Monitoring, Incident Resolution. RAM Upgradation client interaction. Retail Domain knowledge."
-        },
-        {
-            company: "Cognizant",
-            role: "Intern - Application Development",
-            duration: "Feb 2020 - Jun 2020",
-            location: "Chennai"
+            description: "I have experience enhancing and upgrading existing applications based on evolving business requirements, along with providing production support including daily monitoring, incident analysis and resolution, staging, deployment, peak-season support, and OS migrations. I also collaborated directly with clients on RAM upgrades and infrastructure needs, gaining strong domain knowledge in the retail industry."
         }
     ],
     education: [
@@ -56,16 +51,20 @@ export const resumeData = {
     ],
     skills: {
         frontend: ["HTML", "CSS", "Bootstrap", "JavaScript", "TypeScript", "Angular", "ReactJS"],
-        backend: ["Core Java", "JUnit", "Maven", "Gradle", "Spring Framework", "ExpressJS", "Apollo GraphQL", "RESTful Web Services", "Kotlin"],
+        backend: ["Core Java", "JUnit", "Maven", "Gradle", "Spring Framework", "ExpressJS", "GraphQL", "RESTful Web Services", "Kotlin"],
         database: ["MySQL", "MongoDB", "PostgreSQL"],
         architecture: ["Microservices", "Micro Frontend", "Monolithic"],
-        ml: ["Python", "OpenCV"],
+        ml: ["OpenCV", "LLM", "Model Armor", "ChatGPT", "Gemini"],
         gameDev: ["C#", "Unity"],
-        cloudTools: ["AWS", "Microsoft Azure", "OpenShift", "Git", "Docker", "Postman", "Tekton", "QuickBase", "Splunk", "Terraform", "Toshiba POS", "42Crunch", "PCF", "GCP"],
-        programming: ["C", "C++", "GraphQL", "PowerShell", "PHP", "Data Structures", "Algorithms"],
-        design: ["Photoshop"]
+        cloud: ["AWS", "Microsoft Azure", "OpenShift", "Tekton", "Terraform", "PCF", "GCP"],
+        programming: ["C", "C++", "Python", "PowerShell", "PHP", "Data Structures", "Algorithms", "CEL", "Go Template"],
+        tools: ["Photoshop", "Git", "Docker", "Postman", "QuickBase", "Splunk", "Toshiba POS", "42Crunch", "cldctl"]
     },
     projects: [
+        "Cldctl-based solution file for Onboarding App (Ford)",
+        "Reusable Spring Boot Common Library (Ford)",
+        "GCP 3.0 Migration (Ford)",
+        "Model Armor Policy Integration for APIGEE Proxy Publisher App (Ford)",
         "Initializer App (Ford)",
         "PCF to OpenShift Migration (Ford)",
         "New Feature for APIM using Kotlin (Ford)",
@@ -97,6 +96,7 @@ export const resumeData = {
         "Infosys Certified Java SE8 Developer",
         "Infosys Certified Spring Boot Developer",
         "Infosys Global Agile Developer Certification",
+        "Infosys Certified Business Communication Level 7",
         "Cognizant Certified Full Stack Engineer Level 0"
     ]
 };

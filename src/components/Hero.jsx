@@ -11,8 +11,7 @@ const Hero = () => {
             justifyContent: 'center',
             alignItems: 'center',
             textAlign: 'center',
-            padding: '4rem 2rem 0' // Adjusted padding for better vertical alignment
-        }}>
+        }} className="hero-section">
             <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}

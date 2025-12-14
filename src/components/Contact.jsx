@@ -32,7 +32,7 @@ const Contact = () => {
     };
 
     return (
-        <section id="contact" style={{ padding: '4rem 2rem', background: 'transparent', textAlign: 'center' }}>
+        <section id="contact" className="section-padding" style={{ background: 'transparent', textAlign: 'center' }}>
             <motion.h2
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
@@ -47,21 +47,21 @@ const Contact = () => {
                 onSubmit={handleSubmit}
                 style={{ maxWidth: '600px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: '1rem' }}
             >
-                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+                <div className="contact-grid">
                     {/* Important: name attributes must match Google Form entry IDs (e.g. entry.123456) */}
                     <input
                         type="text"
                         name="entry.378332999"
                         placeholder="Name"
                         required
-                        style={{ padding: '1rem', borderRadius: '8px', border: '1px solid var(--glass-border)', background: 'var(--glass-bg)', color: 'var(--text-primary)' }}
+                        style={{ width: '100%', padding: '1rem', borderRadius: '8px', border: '1px solid var(--glass-border)', background: 'var(--glass-bg)', color: 'var(--text-primary)' }}
                     />
                     <input
                         type="email"
                         name="entry.1428626862"
                         placeholder="Email"
                         required
-                        style={{ padding: '1rem', borderRadius: '8px', border: '1px solid var(--glass-border)', background: 'var(--glass-bg)', color: 'var(--text-primary)' }}
+                        style={{ width: '100%', padding: '1rem', borderRadius: '8px', border: '1px solid var(--glass-border)', background: 'var(--glass-bg)', color: 'var(--text-primary)' }}
                     />
                 </div>
                 <textarea
@@ -69,7 +69,7 @@ const Contact = () => {
                     rows="5"
                     placeholder="Message"
                     required
-                    style={{ padding: '1rem', borderRadius: '8px', border: '1px solid var(--glass-border)', background: 'var(--glass-bg)', color: 'var(--text-primary)', fontFamily: 'inherit' }}
+                    style={{ width: '100%', padding: '1rem', borderRadius: '8px', border: '1px solid var(--glass-border)', background: 'var(--glass-bg)', color: 'var(--text-primary)', fontFamily: 'inherit' }}
                 ></textarea>
 
                 <button

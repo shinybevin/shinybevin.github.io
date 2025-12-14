@@ -1,6 +1,8 @@
 :root {
     /* Colors - Light Mode (Default) */
     --bg-primary: #ffffff;
+    --bg-primary-rgb: 255, 255, 255;
+    /* For rgba usage */
     --bg-secondary: #f8f9fa;
     --text-primary: #1a1a1a;
     --text-secondary: #6c757d;
@@ -27,6 +29,8 @@
 
 [data-theme='dark'] {
     --bg-primary: #0f172a;
+    --bg-primary-rgb: 15, 23, 42;
+    /* For rgba usage */
     /* Slate 900 */
     --bg-secondary: #1e293b;
     /* Slate 800 */

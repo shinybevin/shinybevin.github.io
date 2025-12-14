@@ -108,7 +108,8 @@ const Navbar = () => {
                                 left: 0,
                                 width: '100vw',
                                 height: '100vh',
-                                background: 'var(--bg-primary)', // Solid background for legibility
+                                background: 'rgba(var(--bg-primary-rgb), 0.9)', // Slight transparency
+                                backdropFilter: 'blur(10px)', // Glass effect
                                 display: 'flex',
                                 flexDirection: 'column',
                                 justifyContent: 'center',

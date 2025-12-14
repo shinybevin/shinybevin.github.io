@@ -6,7 +6,7 @@ const Skills = () => {
     const categories = Object.keys(resumeData.skills);
 
     return (
-        <section id="skills" style={{ padding: '4rem 2rem', background: 'transparent' }}>
+        <section id="skills" className="section-padding" style={{ background: 'transparent' }}>
             <motion.h2
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
@@ -25,10 +25,11 @@ const Skills = () => {
                         style={{
                             background: 'var(--glass-bg)',
                             backdropFilter: 'blur(5px)',
-                            padding: '1.5rem',
+                            // padding handled by className
                             borderRadius: '8px',
                             border: '1px solid var(--glass-border)',
                         }}
+                        className="responsive-card"
                     >
                         <h3 style={{ textTransform: 'uppercase', fontSize: '0.9rem', color: 'var(--accent-color)', marginBottom: '1rem', letterSpacing: '1px' }}>
                             {category.replace(/([A-Z])/g, ' $1').trim()}

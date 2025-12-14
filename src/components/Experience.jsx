@@ -4,7 +4,7 @@ import { resumeData } from '../data/resume';
 
 const Experience = () => {
     return (
-        <section id="experience" style={{ padding: '4rem 2rem', background: 'transparent' }}>
+        <section id="experience" className="section-padding" style={{ background: 'transparent' }}>
             <motion.h2
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
@@ -22,7 +22,7 @@ const Experience = () => {
                         transition={{ delay: index * 0.1 }}
                         style={{
                             marginBottom: '2rem',
-                            padding: '2rem',
+                            // padding handled by className
                             background: 'var(--glass-bg)',
                             backdropFilter: 'blur(5px)',
                             border: '1px solid var(--glass-border)',
@@ -30,6 +30,7 @@ const Experience = () => {
                             borderLeft: '4px solid var(--accent-color)',
                             boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)'
                         }}
+                        className="responsive-card"
                     >
                         <div style={{ display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', marginBottom: '0.5rem' }}>
                             <h3 style={{ fontSize: '1.25rem' }}>{exp.role}</h3>

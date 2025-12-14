@@ -81,10 +81,9 @@ const Mascot = () => {
                 <img
                     src={avatarImg}
                     alt="Shiny Avatar"
+                    className="avatar-img"
                     style={{
-                        height: '150px', // Reduced size as requested
-                        objectFit: 'contain',
-                        filter: 'drop-shadow(0px 5px 15px rgba(0,0,0,0.3))'
+                        // height handled by CSS class
                     }}
                 />
             </motion.div>
